@@ -33,13 +33,15 @@
 
      <body> 
          <!-- html forms-->
-         <!-- html forms-->
+
+         <!-- log in form-->
          <div class = "container" id = "login-form">
          <div class = "well">      
          <form>
           <div class="form-group">
+            <h3> Create an account or sign in</h3> 
             <label for="inputEmail">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" p laceholder="Email">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
           </div>
           <div class="form-group">
             <label for="inputPassword">Password</label>
@@ -53,6 +55,44 @@
       </div>
         
 
+         <!-- add Agency form-->
+         
+         <div class = "container" id = "add-Agency">
+          <div class=" Normal Well" style="background-color: rgb(211,211,211);">
+          <form>
+           <div class="form-group">
+            <h3> Add a new Agency</h3> 
+             <label for="inputAgencyName">Agency Name</label>
+             <input type="text" class="form-control" id="inputAgencyName" placeholder="Agency Name">
+           </div>
+           <div class="form-group">
+            <label for="agency-access-info">Info Aaccess</label>
+            <select class="form-control" id="agency-access-info">
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>              
+            </select>
+           </div>
+           
+           <div class="form-group">
+            <label for="agency-priority">Priority: <span class = "attrib-value">50</span></label>
+            <input type="range" id="agency-priority" name="Priority" min="0" max="50">
+
+           </div>
+
+           <div class="checkbox">
+            <label>
+              <input id = "id-special" type="checkbox"> Is Special
+            </label>
+          </div>
+        
+
+           <button id = "create-newAgency-button"  type="button" class="btn btn-primary">Add new Agency</button>
+         </form> 
+        </div>  
+       </div> 
+       
+      
+ 
 
 
 

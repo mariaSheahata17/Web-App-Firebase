@@ -129,6 +129,20 @@
           SignIn(email, password)
         });
 
+        //add new agency button
+        $("#create-newAgency-button").click(function(){
+          // get val() from every input button in the "add agency form" and put them into variables
+
+          var agency = {
+            id : $("#inputAgencyName").val() + Date.now ,
+            owner: currentUser.uid,
+            name: $("#inputAgencyName").val(),
+            accessInfo: $("#agency-access-info:selected").val(),
+            isSpecial: $("#id-special").prop("checked")
+            }
+          addAgencyToDatabase(agency);
+          });
+
         // FirebaseAuth.singOut()
         $("#logout-button").click(function(){
           Firebase.auth().singOut();
@@ -138,6 +152,15 @@
 
 
 
+
+
+        
+        function addAgencyToDatabase(agency){
+          // then write this data into the database
+          // this creates a new branch in the database called Agencies and add this information under each agency.id
+          // .set() sends a JSON object to the database
+          firebase.database().ref('Agencies/' + agency.id).set(agency);
+        }
 
         function CreateNewUser(email, password){  
             firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {

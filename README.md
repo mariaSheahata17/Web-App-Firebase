@@ -1,17 +1,18 @@
 # Web-App-Firebase
 # Pre-work - *Name of App Here*
 
-**Name of your app** is a tip calculator application for iOS.
+**Name of your app** Agencies Maker.
 
-Submitted by: **Your Name Here**
+Submitted by: **Maria Shehata**
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [ ] User can create a new acount on the website.
+* [ ] User can log in with their account if they registered before.
 
 The following **optional** features are implemented:
 * [ ] Settings page to change the default tip percentage.

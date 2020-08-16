@@ -1,5 +1,4 @@
 # Web-App-Firebase
-# Pre-work - *Name of App Here*
 
 **Agencies Maker** Agencies Maker.
 
@@ -8,8 +7,6 @@ Submitted by: **Maria Shehata**
 Time spent: **5** hours spent in total
 
 ## User Stories
-
-The following **required** functionality is complete:
 
 * [x] User can create a new acount on the website.
 * [x] User can log in with their account if they registered before.

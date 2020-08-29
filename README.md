@@ -4,8 +4,6 @@
 
 Submitted by: **Maria Shehata**
 
-Time spent: **5** hours spent in total
-
 ## User Stories
 
 * [x] User can create a new acount on the website.
